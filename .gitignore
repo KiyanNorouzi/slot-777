@@ -1,0 +1,26 @@
+# Node modules
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Build outputs
+client/dist/
+server/dist/
+
+# Env files (DON'T COMMIT SECRETS)
+*.env
+*.env.local
+*.env.development
+*.env.production
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+logs/
+*.log
+
+# Misc
+.DS_Store
+Thumbs.db
