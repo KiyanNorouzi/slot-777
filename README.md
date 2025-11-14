@@ -247,5 +247,3 @@ git push
 ```
 
 ---
-
-Enjoy and tweak responsibly 🎰
