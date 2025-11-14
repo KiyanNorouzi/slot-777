@@ -524,7 +524,7 @@ export default function App() {
         </div>
 
         <div className="footer-hint">
-          Press <kbd>Ctrl/⌘ + S</kbd> to Save
+          Press <kbd>Ctrl + S</kbd> to Save
         </div>
       </div>
     </div>
