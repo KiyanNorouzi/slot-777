@@ -1,0 +1,71 @@
+{
+  "startBalanceMinor": 100000,
+  "reels": [
+    [
+      "Seven",
+      "Seven",
+      "Bar",
+      "Bar",
+      "Bar",
+      "Bell",
+      "Bell",
+      "Cherry",
+      "Cherry",
+      "Cherry",
+      "Cherry",
+      "Lemon",
+      "Lemon",
+      "Lemon",
+      "Lemon",
+      "Lemon"
+    ],
+    [
+      "Seven",
+      "Bar",
+      "Bar",
+      "Bar",
+      "Bell",
+      "Bell",
+      "Cherry",
+      "Cherry",
+      "Cherry",
+      "Cherry",
+      "Lemon",
+      "Lemon",
+      "Lemon",
+      "Lemon",
+      "Seven",
+      "Lemon"
+    ],
+    [
+      "Seven",
+      "Bar",
+      "Bar",
+      "Bell",
+      "Bell",
+      "Cherry",
+      "Cherry",
+      "Cherry",
+      "Lemon",
+      "Lemon",
+      "Lemon",
+      "Seven",
+      "Bar",
+      "Cherry",
+      "Lemon",
+      "Bell"
+    ]
+  ],
+  "pay3": {
+    "Seven": 100,
+    "Bar": 40,
+    "Bell": 20,
+    "Cherry": 10,
+    "Lemon": 0
+  },
+  "anyTwoSevensMult": 5,
+  "anyTwoCherriesMult": 3,
+  "singleCherryMult": 1,
+  "minBetMinor": 100,
+  "allowOverBalance": false
+}

@@ -5,17 +5,20 @@ import { ConfigService } from '@nestjs/config';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
+  // CORS for local dev (client + admin UIs)
   app.enableCors({
     origin: [/^http:\/\/localhost:\d+$/],
-    methods: ['GET', 'POST', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Authorization', 'x-spin-sig', 'x-session-id'],
-    exposedHeaders: ['x-spin-sig'],
     credentials: true,
+    allowedHeaders: ['content-type', 'x-session-id', 'x-admin-token'],
+    methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
   });
 
+  // Reads PORT from .env via ConfigService
   const config = app.get(ConfigService);
   const port = Number(config.get('PORT')) || 3001;
+
   await app.listen(port);
-  console.log(`🚀 Application is running on: http://localhost:${port}`);
+  // eslint-disable-next-line no-console
+  console.log(`Server listening on http://localhost:${port}`);
 }
 bootstrap();
