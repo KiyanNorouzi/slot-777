@@ -166,7 +166,7 @@ Restart the server to apply manual changes. **OR** use the **Admin Panel** to ch
 - **Health** – ping `/api/v1/health` to see server availability/uptime.
 - **Import** – upload a JSON file with the config shape; applies locally (not saved yet).
 - **Export** – download the current local config as JSON (backup/share).
-- **Ctrl/⌘ + S** – quick save shortcut (while not focused in an input).
+- **Ctrl + S** – quick save shortcut (while not focused in an input).
 
 ### Fields explained
 
